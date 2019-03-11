@@ -1,0 +1,63 @@
+.comments {
+  height: 190px;
+  padding: 48px var(--content-indent);
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  background: url('../assets/backgrounds/office.jpg');
+}
+
+.comments-bottom {
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+}
+
+.comment {
+  width: 75%;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  flex-grow: 1;
+  font-weight: 300;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.author {
+  font-weight: 700;
+  line-height: 18px;
+  margin-right: 6px;
+  padding-right: 12px;
+  border-right: 1px solid #979797;
+}
+
+.slider-controls {
+  display: flex;
+  list-style-type: none;
+}
+
+/* .slider-controls::before {
+  content: '';
+  height: 19px;
+  border-right: 1px solid #979796;
+} */
+
+.slider-controls li {
+  color: transparent;
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.slider-controls li:hover,
+.slider-controls .active {
+  background-color: #ffffff;
+  transition: background-color 0.5s;
+}

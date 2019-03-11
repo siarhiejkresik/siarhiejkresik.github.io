@@ -1,0 +1,114 @@
+.page-header {
+  height: 1065px;
+  background: url('../assets/backgrounds/server-room.jpg');
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-menu {
+  margin: 0 var(--content-indent);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-nav {
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+}
+
+.page-nav a {
+  padding: 36px 0;
+  margin-left: 70px;
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 1s;
+}
+
+.page-nav a:hover {
+  border-bottom-color: #ffffff;
+  transition: border-bottom-color 0.5s;
+}
+
+.membership {
+  display: grid;
+  height: 123px;
+  grid-template-columns: 1fr 1.05fr;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.membership a {
+  text-decoration: none;
+  padding: 40px;
+  color: inherit;
+  transition: transform 0.25s, font-size 0.25s;
+}
+
+.membership a:hover {
+  transform: translateY(-3px);
+  font-size: 28px;
+}
+
+.membership .login,
+.membership .register {
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership .login {
+  padding-left: 230px;
+  position: relative;
+  background: #21424a;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership .login::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 123px solid #21424a;
+  border-right: 30px solid transparent;
+  content: '';
+}
+
+.membership .register {
+  padding-right: 175px;
+  background: #2fac6c;
+}
+
+.hello {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 16px;
+  font-size: 66px;
+  font-weight: 900;
+}
+
+.hello p {
+  font-family: Georgia, 'Noto Serif', 'Times New Roman', 'Times', serif;
+  font-size: 32px;
+  font-style: italic;
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.5;
+}

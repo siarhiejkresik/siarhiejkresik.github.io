@@ -1,0 +1,37 @@
+.pulse:hover {
+  animation-duration: 0.5s;
+  animation-name: pulse;
+  animation-iteration-count: 2;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slide-in-right {
+  animation-duration: 0.75s;
+  animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+}

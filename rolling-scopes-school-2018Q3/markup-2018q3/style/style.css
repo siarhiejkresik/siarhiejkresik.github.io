@@ -1,0 +1,67 @@
+@import './reset.css';
+@import './fonts.css';
+@import './animations.css';
+@import './gradients.css';
+@import './comments.css';
+@import './footer.css';
+@import './domain.css';
+@import './about.css';
+@import './functions.css';
+@import './page-header.css';
+@import './packages.css';
+
+:root {
+  --main-color-yellow: #f9d423;
+  --main-color-blue: #0faff1;
+  --main-color-gray: #95a5a6;
+  --main-color-red: #f1540f;
+  --main-color-green: #1abc9c;
+  --content-indent: 200px;
+}
+
+body {
+  margin: 0 auto;
+  width: 1600px;
+  font-size: 16px;
+  font-family: 'Lato', 'Segoe UI', sans-serif;
+}
+
+.color-yellow {
+  color: var(--main-color-yellow);
+}
+
+.color-blue {
+  color: var(--main-color-blue);
+}
+
+.color-gray {
+  color: var(--main-color-gray);
+}
+
+.color-red {
+  color: var(--main-color-red);
+}
+
+.color-green {
+  color: var(--main-color-green);
+}
+
+.bg-color-yellow {
+  background-color: var(--main-color-yellow);
+}
+
+.bg-color-blue {
+  background-color: var(--main-color-blue);
+}
+
+.bg-color-gray {
+  background-color: var(--main-color-gray);
+}
+
+.bg-color-red {
+  background-color: var(--main-color-red);
+}
+
+.bg-color-green {
+  background-color: var(--main-color-gren);
+}

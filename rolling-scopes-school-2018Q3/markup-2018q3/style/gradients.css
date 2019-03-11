@@ -1,0 +1,13 @@
+.dotted-top {
+  background-image: linear-gradient(to right, #d7d7d7 4px, transparent 4px);
+  background-position: top;
+  background-size: 8px 2px;
+  background-repeat: repeat-x;
+}
+
+.dotted-right {
+  background-image: linear-gradient(to bottom, #d7d7d7 4px, transparent 4px);
+  background-position: right;
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+}

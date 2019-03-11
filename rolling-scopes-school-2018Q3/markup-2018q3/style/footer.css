@@ -1,0 +1,111 @@
+.footer {
+  padding-left: var(--content-indent);
+  padding-right: var(--content-indent);
+  background: #2a2a2a;
+  color: #686868;
+  font-size: 15px;
+}
+
+.footer a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+.footer-header {
+  height: 76px;
+  border-bottom: 1px solid #474747;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer-nav a {
+  font-size: 13px;
+  margin-left: 45px;
+  font-weight: 700;
+}
+
+.footer-main {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  line-height: 26px;
+  display: grid;
+  grid-template-columns: 377px auto 318px;
+}
+
+.footer-main > * {
+  padding: 16px;
+  border-right: 1px solid #474747;
+}
+
+.footer-main > :first-child {
+  padding-left: 0;
+  padding-right: 80px;
+}
+
+.footer-main > :last-child {
+  padding-right: 0;
+  padding-left: 80px;
+  border-right: unset;
+}
+
+.footer-links {
+  margin-left: 92px;
+  margin-right: 23px;
+  line-height: 29px;
+  columns: 2;
+}
+
+.footer-main .design-by {
+  margin-top: 12px;
+}
+
+.footer-main .design-by b {
+  font-weight: 700;
+}
+
+.footer-links a::before {
+  font-family: 'FontAwesome';
+  font-weight: 700;
+  content: '\f105';
+}
+
+.phone a::before {
+  font-family: 'FontAwesome';
+  content: '\f095';
+  font-size: 15px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.mail a::before {
+  font-family: 'FontAwesome';
+  content: '\f0e0';
+  font-size: 13px;
+}
+
+.footer-main a::before {
+  padding-right: 8px;
+  transition: padding-right 0.5s;
+}
+
+.footer-links a:hover::before {
+  padding-right: 15px;
+  transition: padding-right 0.25s;
+}
+
+.footer-main address {
+  font-style: inherit;
+  line-height: 29px;
+}

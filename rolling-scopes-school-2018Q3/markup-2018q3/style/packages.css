@@ -1,0 +1,143 @@
+.packages {
+  padding: 100px var(--content-indent);
+  background: url('../assets/backgrounds/work.jpg');
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.package {
+  width: 255px;
+  height: 565px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  text-align: center;
+  border-top: 5px solid;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.06);
+  visibility: hidden;
+}
+
+.icon-arrow {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  left: 800px;
+  top: 192px;
+  transform: translate(-40px, -40px);
+  font-size: 80px;
+  color: #ffffff48;
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.package header {
+  padding-top: 36px;
+}
+
+.package footer {
+  padding-top: 28px;
+}
+
+.package h3,
+.package-select {
+  margin: 18px;
+  color: #3d3d3d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.package-select a {
+  text-decoration: none;
+  color: inherit;
+  transition: font-size 0.25s;
+}
+
+.package-select a:hover {
+  font-size: 18px;
+}
+
+.package-icon {
+  width: 55px;
+  height: 55px;
+  border: 6px solid;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+
+.one-fourth {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.one-half {
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.three-fourth {
+  border-left-color: transparent;
+}
+
+.package-icon .fa {
+  transform: rotate(-45deg);
+}
+
+.package-features {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  height: 284px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.package-features p {
+  display: flex;
+  font-weight: 700;
+}
+
+.package-features span {
+  flex: 1;
+  font-weight: 300;
+  font-size: 15px;
+  color: #b4b4b4;
+}
+
+.package-price {
+  width: 105px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1;
+  border-bottom: 3px solid;
+}
+
+.package-price span {
+  color: #2c2c2c;
+}
+
+.package-price .dollar {
+  font-size: 16px;
+  vertical-align: text-top;
+  position: relative;
+  top: 6px;
+}
+
+.package-price .month {
+  color: #8d8d8d;
+  font-size: 13px;
+  font-weight: 400;
+}

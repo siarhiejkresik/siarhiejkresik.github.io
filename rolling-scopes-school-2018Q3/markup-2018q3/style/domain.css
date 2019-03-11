@@ -1,0 +1,158 @@
+.domain {
+  height: 578px;
+  padding-top: 86px;
+  padding-bottom: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #cbcbcb;
+}
+
+.domain h2 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #383737;
+  margin-bottom: 27px;
+}
+
+.domain-comment {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #a2a2a2;
+}
+
+.domain-selector {
+  position: relative;
+  margin: 50px;
+  margin-bottom: 40px;
+  border: 1px solid #d9d9d9;
+  width: 890px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.domain-selector * {
+  font-family: 'Lato', 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: inherit;
+}
+
+.domain-selector > * {
+  padding: 7px 15px;
+}
+
+.domain-selector input {
+  font-size: 15px;
+  flex-grow: 1;
+  border-width: 0;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  font-weight: 700;
+  color: #868686;
+}
+
+/* firefox */
+.domain-selector input::placeholder {
+  opacity: 1;
+}
+
+.domain-selector select {
+  padding-right: 22px;
+  background: inherit;
+  border-width: 0;
+  text-align: right;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.domain-selector input:focus,
+.domain-selector select:focus {
+  outline: unset;
+}
+
+.domain-selector .select-wrapper::after {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  z-index: -1;
+  font-family: 'FontAwesome';
+  font-weight: 700;
+  content: '\f107';
+}
+
+.domain-table {
+  --td-width: 221px;
+  --td-height: 96px;
+  --gap: 6px;
+  --v-gap: 16px;
+  --h-gap: 26px;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+.domain-table tr {
+  height: var(--td-height);
+}
+
+.domain-table td {
+  width: var(--td-width);
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* 👇👇👇 and now some ugly code to make inner separators in a table 👇👇👇 */
+
+/* vertical separator in the table */
+.domain-table td:not(:last-child)::after {
+  position: absolute;
+  top: var(--gap);
+  right: 0px;
+  height: calc(var(--td-height) - 2 * var(--gap));
+  width: 1px;
+  content: '';
+  background: currentColor;
+}
+
+/* vertical separator for the first and last rows in the table */
+.domain-table tr:first-child td:not(:last-child)::after {
+  top: var(--v-gap);
+  height: calc(var(--td-height) - var(--gap) - var(--v-gap));
+}
+.domain-table tr:last-child td::after {
+  height: calc(var(--td-height) - var(--gap) - var(--v-gap));
+}
+.domain-table tr:only-child td::after {
+  top: var(--v-gap);
+  height: calc(var(--td-height) - 2 * var(--v-gap)) !important;
+}
+
+/* horizontal separator in the table */
+.domain-table tr:not(:last-child) td::before {
+  position: absolute;
+  left: var(--gap);
+  bottom: 0px;
+  content: '';
+  width: calc(var(--td-width) - 2 * var(--gap));
+  height: 1px;
+  background: currentColor;
+}
+
+/* horizontal separator for the first and last columns in the table */
+/* warning: don't remove tr selector! */
+.domain-table tr td:first-child::before {
+  left: var(--h-gap);
+  width: calc(var(--td-width) - var(--gap) - var(--h-gap));
+}
+.domain-table tr td:last-child::before {
+  width: calc(var(--td-width) - var(--gap) - var(--h-gap));
+}
+.domain-table tr td:only-child::before {
+  left: var(--h-gap);
+  width: calc(var(--td-width) - 2 * var(--h-gap)) !important;
+}
