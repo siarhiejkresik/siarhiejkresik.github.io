@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url("../fonts/LuckiestGuy-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"),
+         url("../fonts/Lato-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Italic.woff2") format("woff2"), 
+         url("../fonts/Lato-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "EBGaramondNumbers";
+    src: url('../fonts/ebgaramond-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ebgaramond-regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Match-match game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="hidden">
+        <a href="index.html">
+            <h1>Match-match game</h1>
+        </a>
+    </header>
+    <main class="game-name">
+        <section class="welcome hidden">
+            <h2>Welcome!</h2>
+            <article>
+                <h3>About the game</h3>
+                <blockquote> Concentration, also known as Match Match, Match Up, Memory, Pelmanism, Shinkei-suijaku, Pexeso or simply
+                    Pairs, is a card game in which all of the cards are laid face down on a surface and two cards are flipped
+                    face up over each turn. The object of the game is to turn over pairs of matching cards.
+                    <cite>
+                        <a href="https://en.wikipedia.org/wiki/Concentration_(game)">wikipedia.org</a>
+                    </cite>
+                </blockquote>
+                <h3>How to play</h3>
+                <ul>
+                    <li>Turn over any two cards</li>
+                    <li>If the two cards match, they disappear</li>
+                    <li>If they don't match, they flip back over</li>
+                    <li>The game is over when all the cards have been disappeared</li>
+                </ul>
+            </article>
+            <button class="next">Next</button>
+        </section>
+
+        <section class="login hidden">
+            <h2>Log in</h2>
+            <form id="login">
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname" name="firstname" maxlength="20">
+
+                <label for="lastname">Last name </label>
+                <input type="text" id="lastname" name="lastname" maxlength="20">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </form>
+            <button class="submit-login" type="submit" form="login">Log in</button>
+        </section>
+
+        <section class="menu hidden">
+            <h2>Menu</h2>
+            <section class="player-info row-centered">
+                <div>
+                    <b>Player:</b>
+                    <span class="firstname"></span>
+                    <span class="lastname"></span>
+                </div>
+                <button class="logout flat">Log out</button>
+            </section>
+            <h3>Preferences</h3>
+            <section class="preferences">
+                <section>
+                    <h4 class="hidden">Theme</h4>
+                    <div class="carousel row-centered"></div>
+                </section>
+                <section>
+                    <h4 class="hidden">Difficulty</h4>
+                    <div class="row-centered">
+                        <button class="easy selected">easy</button>
+                        <button class="normal">normal</button>
+                        <button class="hard">hard</button>
+                    </div>
+                </section>
+            </section>
+            <button class="play">Play</button>
+        </section>
+
+        <section class="game hidden">
+            <section class="game-info">
+                <div>
+                    <b>Player:</b>
+                    <span class="firstname"></span>
+                    <span class="lastname"></span>
+                </div>
+                <div class="timer"></div>
+                <div>
+                    <b>Difficulty:</b>
+                    <span class="difficulty"></span>
+                </div>
+            </section>
+            <div class="grid"></div>
+            <button class="exit">Exit to menu</button>
+        </section>
+
+        <section class="result hidden">
+            <h2>Congratulations!</h2>
+            <section class="result-info">
+                <div>
+                    <b>Player:</b>
+                    <span class="firstname"></span>
+                    <span class="lastname"></span>
+                </div>
+                <div>
+                    <b>Difficulty:</b>
+                    <span class="difficulty"></span>
+                </div>
+                <div>Your time is
+                    <span class="time"></span>
+                </div>
+                <div class="record hidden">You got the
+                    <span class="place"></span> place!</div>
+            </section>
+            <button class="play">Play again</button>
+            <button class="return">Return to menu</button>
+        </section>
+    </main>
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>

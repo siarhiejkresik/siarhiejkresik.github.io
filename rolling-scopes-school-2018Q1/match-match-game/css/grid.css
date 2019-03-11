@@ -1,0 +1,10 @@
+.grid {
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 4px;
+    background: linear-gradient(160deg, hsla(280, 100%, 50%, 0.2) 0%, hsla(170, 100%, 50%, 0.2) 100%);
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, .13);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+}
