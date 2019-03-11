@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=cyrillic');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  --color: rgba(32, 178, 171, 0.5);
+  --bcolor: rgba(220, 220, 220, 0.5);
+  border-spacing: 0;
+  color: #222;
+  border-radius: 3px;
+  box-shadow: 0 0 9px hsl(0, 0%, 40%);
+  border-bottom: 0.5em solid var(--color);
+}
+
+table,
+form {
+  margin: 20px auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+thead {
+  background: var(--color);
+}
+
+tbody tr:nth-child(2n) {
+  background: var(--bcolor);
+}
+
+td,
+th {
+  width: 50px;
+  padding: 2px 10px;
+  text-align: right;
+}
+
+th {
+  text-align: center;
+  font-weight: 500;
+  padding: 8px;
+  cursor: pointer;
+}
+
+td.tnumber,
+td.tresult,
+td.tdelta {
+  width: unset;
+  font-weight: 500;
+}
+
+td.tname {
+  text-align: left;
+}
+
+td.tchart,
+td.tnumber,
+td.tresult {
+  text-align: center;
+}
+
+td.tname {
+  font-weight: 500;
+  border-right: 1px solid var(--color);
+}
+
+td.tname,
+td.ttime,
+td.tchart,
+td.tresult,
+td.tdelta {
+  font-weight: 500;
+  border-left: 1px solid var(--color);
+}
+
+th:hover {
+  background-color: var(--bcolor);
+}
+
+th[data-sorted-direction='descending'] {
+  background: linear-gradient(var(--color), transparent);
+}
+
+th[data-sorted-direction='ascending'] {
+  background: linear-gradient(transparent, var(--color));
+}
