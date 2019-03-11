@@ -1,0 +1,6 @@
+@import url('./fontello.css');
+@import url('../notifications/style.css');
+
+body {
+  font-family: serif;
+}
