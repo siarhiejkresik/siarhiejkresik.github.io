@@ -1,0 +1,24 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tags a {
+    position: relative;
+    display: block;
+    padding: 0 13px;
+    margin: 3px 18px 3px 0;
+    height: 18px;
+    line-height: 18px;
+    font-size: 13px;
+    color: #fff;
+    background-color: #6794b7;
+    text-decoration: none;
+}
+
+.tags a::after {
+    position: absolute;
+    right: -16px;
+    content: url('../images/right-dot-arrow.png');
+}

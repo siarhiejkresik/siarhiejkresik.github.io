@@ -1,0 +1,58 @@
+.main-article h2 {
+    padding: 10px 0;
+    font-family: ArialNarrow, sans;
+    font-size: 18px;
+    color: #69747c;
+}
+
+.main-article {
+    position: relative;
+}
+
+.byline {
+    height: 40px;
+    border-top: 1px solid #e2e5e8;
+    border-bottom: 1px solid #e2e5e8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time::before,
+.author::before {
+    top: 3px;
+    position: relative;
+}
+
+.time::before {
+    content: url("../images/clock.png");
+}
+
+.author::before {
+    content: url("../images/foot.png");
+}
+
+.social {
+    margin-left: auto;
+    display: flex;
+    flex-flow: row;
+    filter: saturate(0%);
+    opacity: .3;
+}
+
+.social a {
+    height: 24px;
+    margin: 3px;
+    padding-left: 30px;
+    padding-right: 6px;
+    border-radius: 4px;
+    font-family: Arial, sans;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

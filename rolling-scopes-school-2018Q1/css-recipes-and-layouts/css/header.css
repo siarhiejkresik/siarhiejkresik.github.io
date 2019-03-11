@@ -1,0 +1,23 @@
+/* page header */
+
+body>header {
+    justify-self: center;
+    align-self: center;
+}
+
+body>header a {
+    text-decoration: none;
+}
+
+.logo {
+    margin: 0;
+    padding: 15px;
+    font-family: TrendSansOne;
+    font-weight: 400;
+    color: #6794b7;
+    font-size: 38px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

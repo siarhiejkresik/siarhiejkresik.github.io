@@ -1,0 +1,19 @@
+.bg-facebook {
+    background: #3c5a97 url("../images/social_sprites.png") -10px -10px no-repeat;
+}
+
+.bg-googleplus {
+    background: #c25235 url("../images/social_sprites.png") -10px -54px no-repeat;
+}
+
+.bg-twitter {
+    background: #00acee url("../images/social_sprites.png") -10px -142px no-repeat;
+}
+
+.bg-vk {
+    background: #48729d url("../images/social_sprites.png") -10px -186px no-repeat;
+}
+
+.bg-yandex {
+    background: #d83933 url("../images/social_sprites.png") -10px -98px no-repeat;
+}

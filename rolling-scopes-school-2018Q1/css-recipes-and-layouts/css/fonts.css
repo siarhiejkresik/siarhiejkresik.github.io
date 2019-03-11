@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Cantarell';
+    src: url('../fonts/Cantarell-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrendSansOne';
+    src: url('../fonts/trendsansone-webfont.woff2') format('woff2'), url('../fonts/trendsansone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ArialNarrow';
+    src: url('../fonts/ARIALN.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

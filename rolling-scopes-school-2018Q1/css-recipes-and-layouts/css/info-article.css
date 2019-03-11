@@ -1,0 +1,26 @@
+.info-article h2 {
+    font-family: Cantarell;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 5px solid;
+    color: rgb(103, 148, 183);
+}
+
+.info-article h2::before {
+    margin-right: 6px;
+    width: 30px;
+    background: rgb(103, 148, 183);
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.mark-question::before {
+    content: '?';
+}
+
+.mark-exclamation::before {
+    content: '!';
+}

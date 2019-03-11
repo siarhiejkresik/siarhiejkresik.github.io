@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Racoon blog</title>
+</head>
+
+<body class="page-content">
+    <header>
+        <a href="./index.html">
+            <h1 class="logo">
+                <span>
+                    Racoo
+                </span>
+                <img src="./images/logo.png" alt="">
+                <span>
+                    nblog
+                </span>
+            </h1>
+        </a>
+    </header>
+
+    <nav class="page-navigation">
+        <ul id="nav">
+            <li>
+                <a href="">Javascript</a>
+            </li>
+            <li>
+                <a href="">CSS</a>
+            </li>
+            <li>
+                <a href="">Latest</a>
+            </li>
+            <li>
+                <a href="">HTML</a>
+            </li>
+            <li>
+                <a href="">DESIGN</a>
+            </li>
+        </ul>
+        <div class="nav-item nav-about">?</div>
+        <div class="nav-item nav-info">!</div>
+        <div class="nav-item nav-tags">
+            <img src="./images/tag.png" alt="tags">
+        </div>
+        <div id="nav-button" class="nav-item nav-menu"><img src="./images/menu.png" alt="menu"></div>
+    </nav>
+
+    <aside>
+        <article class="info-article">
+            <h2 class="mark-question">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article class="info-article">
+            <h2 class="mark-exclamation">Some info</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <div class="tags">
+            <a href="">Racoon</a>
+            <a href="">Racoon</a>
+            <a href="">Coon</a>
+            <a href="">Dog</a>
+            <a href="">Cat</a>
+            <a href="">Developer</a>
+            <a href="">Racoon</a>
+            <a href="">Racoon</a>
+            <a href="">Coon</a>
+            <a href="">Dog</a>
+            <a href="">Cat</a>
+            <a href="">Developer</a>
+        </div>
+    </aside>
+
+    <main>
+        <article class="main-article">
+            <header>
+                <img class="responsive" src="./images/image-1.jpg" alt="flowers">
+                <h2>Blogotitle of blogopost about blogoflowers</h2>
+                <div class="byline">
+                    <span class="time">22:58 Jan&nbsp;01,&nbsp;2014</span>
+                    <span class="author">by E.&nbsp;Hyperraccoon</span>
+                    <div class="social">
+                        <a class="bg-facebook">16</a>
+                        <a class="bg-googleplus">7</a>
+                        <a class="bg-twitter">15</a>
+                        <a class="bg-vk">16</a>
+                        <a class="bg-yandex">1</a>
+                    </div>
+                </div>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <article class="main-article">
+            <header>
+                <img class="responsive" src="./images/image-2.jpg" alt="flowers">
+                <h2>Blogotitle about colorful colors</h2>
+                <div class="byline">
+                    <span class="time">22:58 Jan&nbsp;01,&nbsp;2014</span>
+                    <span class="author">by E.&nbsp;Hyperraccoon</span>
+                    <div class="social">
+                        <a class="bg-facebook">16</a>
+                        <a class="bg-googleplus">7</a>
+                        <a class="bg-twitter">15</a>
+                        <a class="bg-vk">16</a>
+                        <a class="bg-yandex">1</a>
+                    </div>
+                </div>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </article>
+        <div class="spinner rotating"></div>
+    </main>
+    <script>
+        document.getElementById("nav-button").addEventListener('click', (e) => {
+            document.getElementById("nav").classList.toggle("opened");
+        });
+    </script>
+</body>
+
+</html>

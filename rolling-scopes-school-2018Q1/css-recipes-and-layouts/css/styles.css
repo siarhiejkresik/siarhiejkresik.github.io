@@ -1,0 +1,235 @@
+@import url('normalize.css');
+@import url('fonts.css');
+@import url('animation.css');
+@import url('header.css');
+@import url('page-navigation.css');
+@import url('main-article.css');
+@import url('info-article.css');
+@import url('tags.css');
+@import url('social-icons.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    color: #69747c;
+    font-family: Arial, sans;
+    font-size: 13px;
+}
+
+p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* page layout */
+
+body>header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+.page-content {
+    display: grid;
+    grid-template-areas: ". header header. " "nav nav nav nav" ". main aside .";
+    grid-template-columns: auto 640px 256px auto;
+    grid-column-gap: 26px;
+}
+
+/* page aside */
+
+aside {
+    display: grid;
+    grid-row-gap: 20px;
+    align-content: start;
+}
+
+/* page main */
+
+main {
+    display: grid;
+    grid-row-gap: 20px;
+    align-content: start;
+}
+
+/* spinner */
+
+.spinner {
+    background: url("../images/loading.png") top no-repeat;
+    height: 48px;
+    width: 48px;
+    margin: 24px auto;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* page content */
+    .page-content {
+        display: flex;
+        flex-direction: column;
+    }
+    /* page navigation */
+    .page-navigation {
+        margin-bottom: 0;
+        display: grid;
+        grid-column-gap: 3px;
+        grid-template-columns: 44px auto 44px;
+        grid-template-rows: 56px auto;
+    }
+    .page-navigation ul {
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: row;
+    }
+    .page-navigation .nav-item {
+        display: flex;
+    }
+    .page-navigation .nav-menu,
+    .page-navigation .nav-tags {
+        display: none;
+    }
+    .page-navigation .nav-about {
+        order: -1;
+    }
+    /* page main */
+    /* main article */
+    .main-article {
+        box-sizing: border-box;
+        padding: 0 62px;
+    }
+    .social {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-end;
+        opacity: 1;
+        filter: none;
+    }
+    .social a {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0 0 8px 3px;
+    }
+    /* page aside */
+    /* info artice */
+    .info-article {
+        display: none;
+    }
+    .tags {
+        padding: 30px 50px;
+        justify-content: center;
+    }
+    .tags a {
+        margin: 5px 20px 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* page content */
+    .page-content {
+        display: flex;
+        flex-direction: column;
+    }
+    /* page header */
+    main>header {
+        height: 53px;
+    }
+    .logo {
+        font-size: 24px;
+        padding: 9px;
+    }
+    .logo img {
+        width: 35px;
+        height: 34px;
+    }
+    /* page navigation */
+    .page-navigation {
+        margin-bottom: 0;
+        border-bottom: 0;
+        padding: 2px;
+        display: grid;
+        grid-column-gap: 3px;
+        grid-template-columns: 30px 30px 30px auto 38px;
+        grid-template-rows: 30px auto;
+    }
+    .page-navigation ul {
+        display: none;
+        grid-column: 1 / 6;
+        grid-row: 2 / 3;
+        flex-direction: column;
+    }
+    .page-navigation a {
+        padding: 10px;
+        width: 100%;
+    }
+    .page-navigation li :hover {
+        background: #c6defa;
+        color: #6b9ad0;
+    }
+    .page-navigation li:hover::before,
+    .page-navigation li:hover::after {
+        display: none;
+    }
+    .page-navigation .nav-item {
+        display: flex;
+    }
+    .page-navigation .nav-menu {
+        grid-column: 5 / 6;
+        background: inherit;
+    }
+    /* page main */
+    main {
+        padding: 16px;
+    }
+    .main-article {
+        padding-bottom: 40px;
+    }
+    .main-article h2 {
+        padding: 13px;
+        text-align: center;
+        background: rgba(226, 229, 232, 0.38);
+    }
+    .byline {
+        justify-content: space-around;
+    }
+    .social {
+        position: absolute;
+        bottom: 10px;
+        align-items: center;
+        opacity: 1;
+        filter: none;
+    }
+    /* page aside */
+    aside,
+    .about,
+    .info {
+        display: none;
+    }
+    .tags {
+        padding: 0 49px;
+    }
+}
